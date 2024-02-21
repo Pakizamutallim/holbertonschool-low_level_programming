@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - Prints a text according number
+ * main - Entry point
+ * Description: 'the program's description'
  * Return: Always (Success)
  *
  */
