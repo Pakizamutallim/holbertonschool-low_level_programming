@@ -1,14 +1,15 @@
 #include <stdio.h>
-/*
- * main - Prints the alphabet in lowercase.
- *
- * Return: Always 0.
+/**
+ * main - Entry point
+ * Description: 'the program's description'
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	char x;
-	for (x = 'a'; x <= 'z'; x ++)
+
+	for (x = 'a'; x <= 'z'; x++)
 	{
 		putchar(x);
 	}
