@@ -8,17 +8,17 @@
 
 int print_sign(int n)
 {
-	for (c = 'a'; c <= 'z'; c++)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		_putchar(c);
-		if (islower(c) != c)
+		_putchar(n);
+
+		if (islower(c) != 0)
 		{
-			return(0)
+			return(0);
 		}
 		else
 		{
 			return(0);
 		}
 	}
-
 }
