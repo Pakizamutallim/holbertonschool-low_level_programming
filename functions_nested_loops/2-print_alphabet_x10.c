@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet_x10 - Empty point
+ * main - Empty point
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 
 	while(x < 'z')
 	{
-		y = 0
+		y = 0;
 		while (y < 10)
 		{
 			_putchar(y);
