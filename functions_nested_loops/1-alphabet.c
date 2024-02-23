@@ -1,18 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Empty point
- * Description: 'the program's description'
+ * main - check the code
+ * 
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	print_alphabet(x);
-
-	for (x = 'a'; x <= 'z'; x++)
-	{
-		_putchar(x);
-	}
-	_putchar('\n');
+	print_alphabet();
 	return (0);
 }
