@@ -6,11 +6,11 @@
  * Return: Always 0 (Success)
  */
 
-int print_sign(int n)
+int _islower(int c)
 {
-	for (n = 'a'; n <= 'z'; n++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(n);
+		_putchar(c);
 
 		if (islower(c) != 0)
 		{
