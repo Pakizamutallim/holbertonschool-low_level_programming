@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Empty point
+ * print_alphabet_x10 - Empty point
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
