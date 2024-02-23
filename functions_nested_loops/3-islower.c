@@ -2,7 +2,6 @@
 #include "main.h"
 /**
  * _islower - Checks if a character is lowercase.
- * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
 
