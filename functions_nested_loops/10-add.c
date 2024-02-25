@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-/**
+/*
  * add - check lowercase.
  *
  * @a: The first integer to be added.
