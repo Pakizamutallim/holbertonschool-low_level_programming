@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * add - adds two numbers together.
- *
  * @a: The first integer to be added.
- *
  * @b: The second integer to be added. 
  */
 
