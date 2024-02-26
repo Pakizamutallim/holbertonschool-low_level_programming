@@ -10,7 +10,6 @@
 
 int _isupper(int c)
 {
-	int c = 'M'
 	if (_isupper(c))
 	{
 		return (1);
