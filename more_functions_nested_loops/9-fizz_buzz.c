@@ -16,11 +16,7 @@ int main()
 	{
 		if ((a % 5) == 0 && (a % 3) == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
-			putchar(32);
+			printf("FizzBuzz ");
 		}
 		else if ((a % 5) == 0)
 		{
@@ -32,7 +28,11 @@ int main()
 		}
 		else if ((a % 3) == 0)
 		{
-			printf("FizzBuzz ");
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar(32);
 		}
 		else
 		{
