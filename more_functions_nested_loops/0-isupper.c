@@ -4,13 +4,14 @@
 
 /**
  * _isupper - check the code.
- * 
+ * @c - is a letter.
  * Return: Always 0.
  */
 
 int _isupper(int c)
 {
-	if (_isupper(c) )
+	int c + 'M'
+	if (_isupper(c))
 	{
 		return (1);
 	}
