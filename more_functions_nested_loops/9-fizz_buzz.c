@@ -24,7 +24,6 @@ int main()
 			putchar('u');
 			putchar('z');
 			putchar('z');
-			putchar(32);
 		}
 		else if ((a % 3) == 0)
 		{
@@ -32,11 +31,14 @@ int main()
 			putchar('i');
 			putchar('z');
 			putchar('z');
-			putchar(32);
 		}
 		else
 		{
-			printf("%d ", a);
+			printf("%d", a);
+		}
+		if (a != 0)
+		{
+			putchar(32);
 		}
 	}
 	putchar('\n');
