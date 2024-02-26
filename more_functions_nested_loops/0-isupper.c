@@ -4,7 +4,7 @@
 
 /**
  * _isupper - check the code.
- * @c - is a letter.
+ * @c: - The number to be checked.
  * Return: 1 for upper letter or 0 for otherwise.
  */
 
