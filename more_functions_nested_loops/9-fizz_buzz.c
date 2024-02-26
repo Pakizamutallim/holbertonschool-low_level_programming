@@ -16,25 +16,25 @@ int main()
 	{
 		if ((a % 3) == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar(32);
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar(32);
 		}
 		else if ((a % 5) == 0)
 		{
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
-			_putchar(32);
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(32);
 		}
 		else
 		{
 			printf("%d ", a);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 	return (0);
 }
