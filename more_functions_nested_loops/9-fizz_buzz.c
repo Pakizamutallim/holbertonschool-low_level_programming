@@ -32,7 +32,7 @@ int main()
 		}
 		else if ((a % 5) == 0 && (a % 3) == 0 && a != 0)
 		{
-			printf("FizzBuzz", a);
+			printf("FizzBuzz");
 		}
 		else
 		{
