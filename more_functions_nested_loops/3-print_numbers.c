@@ -4,10 +4,9 @@
 
 /**
  * print_numbers - check the code.
- * @a: The number to be checked.
  */
 
-void print_numbers(void a)
+void print_numbers(void)
 {
 	int a = '0';
 
