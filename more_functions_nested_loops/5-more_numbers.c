@@ -8,7 +8,7 @@
  * @b: It is a int.
  */
 
-void more_numbers(void a b)
+void more_numbers(void a, b)
 {
 	int a, b;
 
