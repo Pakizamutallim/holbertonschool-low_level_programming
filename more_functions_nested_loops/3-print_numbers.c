@@ -7,7 +7,7 @@
  * @a: The number to be checked.
  */
 
-void print_numbers(void)
+void print_numbers(void a)
 {
 	int a = '0';
 
