@@ -2,7 +2,7 @@
 
 /**
  * _strlen - returns the length of a string.
- * the pointer points to to 98
+ * Return: the length of the string.
  * @s: pointer to the variable to update
  */
 
