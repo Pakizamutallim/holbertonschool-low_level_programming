@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - updates the value of the variable
+ * _strlen - returns the length of a string.
  * the pointer points to to 98
  * @s: pointer to the variable to update
  */
