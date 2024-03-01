@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * _puts - updates the value of the variable
+ * rev_string - updates the value of the variable
  * the pointer points to to 98
- * @str: pointer to the variable to update
+ * @s: pointer to the variable to update
  */
 
 void rev_string(char *s)
