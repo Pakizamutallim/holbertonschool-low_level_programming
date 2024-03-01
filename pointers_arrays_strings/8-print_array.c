@@ -9,14 +9,16 @@
 
 void print_array(int *a, int n)
 {
-	int i, length;
+	int i;
 
 	while (a[i] <= n)
 	{
-		if (i != n)
+		i++;
+
+		if (a[i] != n)
 		{
-			printf("%d, ", i);
+			printf("%d, ", a[i]);
 		}
 	}
-	printf("\n")
+	printf("\n");
 }
