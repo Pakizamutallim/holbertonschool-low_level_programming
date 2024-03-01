@@ -5,6 +5,6 @@
 {
 	int i;
 
-	i = atio(s);
+	i = _atio(s);
 	printf("%d", i);
 }
