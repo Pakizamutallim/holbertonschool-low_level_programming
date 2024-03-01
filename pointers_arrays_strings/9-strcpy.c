@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *_strcpy - updates the value of the variable
+ * _strcpy - updates the value of the variable
  * the pointer points to to 98
  * @src: pointer to the variable to update
  * @dest: pointer to the variable to update
