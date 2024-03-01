@@ -3,7 +3,7 @@
 
 /**
  * print_array - updates the value of the variable
- * a - the pointer points to to 98
+ * @a: the pointer points to to 98
  * @n: pointer to the variable to update
  */
 
