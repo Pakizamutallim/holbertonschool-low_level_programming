@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - updates the value of the variable
+ * puts_half - updates the value of the variable
  * the pointer points to to 98
- * @n: pointer to the variable to update
+ * @str: pointer to the variable to update
  */
 
 void puts_half(char *str)
@@ -16,7 +16,7 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	for (i = len / 2; i < len; i++)
+	for (i = len - 1 / 2; i < len; i++)
 	{
 		_putchar(str[i]);
 	}
