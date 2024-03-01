@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strcpy - updates the value of the variable
+ * _strcpy - copies the string pointed to by src
  * the pointer points to to 98
  * @src: pointer to the variable to update
  * @dest: pointer to the variable to update
+ * Return: the pointer to dest
  */
 
 char *_strcpy(char *dest, char *src)
