@@ -13,7 +13,7 @@
 	int n = 0;
 	int f = 0;
 	int digit;
-	int d
+	int d;
 
 	while (s[length] != 0)
 	{
