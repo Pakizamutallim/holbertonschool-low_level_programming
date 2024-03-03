@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - encodes a string in rot13
+ * print_number - prints an arbitrary integer using putchar
  * @n: string to be encoded
  */
 void print_number(int n)
@@ -25,5 +25,5 @@ void print_number(int n)
 			_putchar(m / x % 10 + '0');
 		x = x / 10;
 	}
-	while (i != 0);
+	while (x != 0);
 }
