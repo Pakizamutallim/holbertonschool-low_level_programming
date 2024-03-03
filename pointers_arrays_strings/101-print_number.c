@@ -1,11 +1,25 @@
 #include "main.h"
 
 /**
- * rot13 - encodes a string in rot13
- * @s: string to be encoded
- *
- * Return: the resulting string
+ * print_number - encodes a string in rot13
+ * @n: string to be encoded
  */
-char *rot13(char *s)
+void print_number(int n)
 {
+	unsigned int m;
+
+	if (n < 0)
+	{
+		m = -n;
+		_putchar(45);
+	}
+	else 
+	{
+		m = n;
+	}
+	if (m / 10) 
+	{
+		print_number(m / 10);
+	}
+	_putchar((m % 10) + 48)
 }
