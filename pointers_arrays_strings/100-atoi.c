@@ -19,7 +19,7 @@
 	{
 		length++;
 	}
-	while (i < length && f ==0)
+	while (i < length && f == 0)
 	{
 		if (s[i] == '-')
 		{
@@ -28,6 +28,7 @@
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
+
 			if (d % 2)
 				digit = digit;
 			n = n * 10 + digit;
