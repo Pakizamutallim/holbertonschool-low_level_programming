@@ -13,11 +13,11 @@ void print_number(int n)
 		m = -n;
 		_putchar(45);
 	}
-	else 
+	else
 	{
 		m = n;
 	}
-	if (m / 10) 
+	if (m / 10)
 	{
 		print_number(m / 10);
 	}
