@@ -3,14 +3,17 @@
 
 /**
  * _atoi - updates the value of the variable
+ *
  * @s: pointer to the variable to update
+ *
+ * Return: returns result
  */
 
  int _atoi(char *s)
 {
 	int signs = 1;
 	unsigned int sum = 0;
-	int final = 0;
+	int x = 0;
 
 	for (; *s != '\0'; s++)
 	{
@@ -29,11 +32,11 @@
 	}
 	if (signs == -1)
 	{
-		final = -sum;
+		x = -sum;
 	}
 	else
 	{
-		final = sum;
+		x = sum;
 	}
-	return (final);
+	return (x);
 }
