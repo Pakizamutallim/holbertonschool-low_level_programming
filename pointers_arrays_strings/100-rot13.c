@@ -13,7 +13,7 @@ char *rot13(char *s)
 	char *lets = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *rot = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (a = 0; s[i] != 0; a++)
+	for (a = 0; s[a] != 0; a++)
 	{
 		for (b = 0; b < 52; b++)
 		{
