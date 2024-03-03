@@ -6,6 +6,8 @@
  * the pointer points to to 98
  * @s1: variable to update
  * @s2: it is a variable
+ *
+ * Return: returns a result
  */
 
 int _strcmp(char *s1, char *s2)
