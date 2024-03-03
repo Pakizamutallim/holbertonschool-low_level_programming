@@ -9,7 +9,7 @@
  * Return: returns result
  */
 
- int _atoi(char *s)
+int _atoi(char *s)
 {
 	int signs = 1;
 	unsigned int sum = 0;
