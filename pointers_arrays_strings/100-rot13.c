@@ -18,7 +18,10 @@ char *rot13(char *s)
 		for (b = 0; lets[b] != 0; b++)
 		{
 			if (s[a] == lets[b])
+			{
 				s[a] = rot[b];
+				break;
+			}
 		}
 	}
 	return (s);
