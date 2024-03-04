@@ -3,7 +3,7 @@
 
 /**
  * *_strchr - updates the value of the variable
- * @c: the pointer points 
+ * @c: the pointer points
  * @s: pointer to the variable to update
  * Return: returns result.
  */
