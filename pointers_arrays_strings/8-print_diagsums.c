@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * - check the code
- *
- *
+ * print_diagsums - check the code
+ * @a: it is a array
+ * @size: it is size of array
  */
 
 void print_diagsums(int *a, int size)
