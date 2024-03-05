@@ -3,7 +3,7 @@
 
 /**
  * *_strpbrk - updates the value of the variable
- * @accept; the pointer points
+ * @accept: the pointer points
  * @s: pointer to the variable to update
  */
 
@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if ( s[i] == accept[j])
 			{
-				return (s);
+				return (s + i);
 			}
 		}
 	}
