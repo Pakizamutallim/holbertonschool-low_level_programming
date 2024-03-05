@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 /**
- *  - updates the value of the variable
+ * *_strstr - updates the value of the variable
+ * @haystack: it is a string array
+ * @needle: it is a substring
+ * Return: returns result
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -19,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 		if (!needle[j])
-			return (needle);
+			return (haystack);
 	}
 	return (0);
 }
