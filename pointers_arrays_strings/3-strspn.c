@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * *_memcpy - updates the value of the variable
- * @dest: the pointer points to to 98
- * @n: a number of array
- * @src: pointer to the variable to update
+ * _strspn - updates the value of the variable
+ * @s: the pointer points to to 98
+ * @accept: a number of array
  * Return: returns result.
  */
 
