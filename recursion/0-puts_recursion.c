@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - print value of array
- * @s: it is an array 
+ * @s: it is an array
  *
  */
 
