@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *cap_string - updates the value of the variable
+ * _print_rev_recursion - updates the value of the variable
  * the pointer points to to 98
  * @s: pointer to the variable to update
  * Return: returns result.
