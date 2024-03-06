@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _puts_recursion - print value of array
+ * @s: it is an array 
+ *
+ */
 
 void _puts_recursion(char *s)
 {
@@ -8,7 +13,8 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
-	else{
+	else
+	{
 		_putchar('\n');
 	}
 }
