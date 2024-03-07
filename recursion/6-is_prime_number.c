@@ -8,14 +8,20 @@
  * Return: returns result.
  */
 
-int my_is_prime(int n)
+int my_is_prime(int n, int a)
 {
 	if (n == 0 || n == 1)
 	{
 		return (0);
 	}
+	if (n % a == 0)
+	{
+		return (0);
+	}
+	else if (n == b)
+		return (1);
 
-	return (my_is_prime(n, n - 1));
+	return (my_is_prime(n, a + 1));
 }
 
 int is_prime_number(int n)
