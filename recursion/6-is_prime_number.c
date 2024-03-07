@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * *cap_string - updates the value of the variable
- * the pointer points to to 98
- * @s: pointer to the variable to update
+ * my_is_prime - updates the value of the variable
+ * @n: the pointer points to to 98
+ * @a: pointer to the variable to update
  * Return: returns result.
  */
 
@@ -23,7 +23,11 @@ int my_is_prime(int n, int a)
 
 	return (my_is_prime(n, a + 1));
 }
-
+/**
+ * is_prime_number - updates the value of the variable
+ * @n: it is a number
+ * Return: returns result
+ */
 int is_prime_number(int n)
 {
 	if (n == 0 || n == 1)
