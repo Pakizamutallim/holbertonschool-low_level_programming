@@ -18,8 +18,6 @@ int my_is_prime(int n, int a)
 	{
 		return (0);
 	}
-	else if (n == b)
-		return (1);
 
 	return (my_is_prime(n, a + 1));
 }
