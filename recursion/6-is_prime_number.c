@@ -30,10 +30,7 @@ int my_is_prime(int n)
 	{
 		return (0);
 	}
-	else
-	{
-		return (my_is_prime(n, n - 1));
-	}
+	return (my_is_prime(n, n - 1));
 }
 
 int is_prime_number(int n)
