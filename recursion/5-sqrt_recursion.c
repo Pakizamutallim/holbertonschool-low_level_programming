@@ -3,10 +3,8 @@
 
 /**
  * my_sqrt_rec - updates the value of the variable
- * _sqrt_recursion - updates the value of the variable
  * @a: the pointer points to to 98
  * @b: pointer to the variable to update
- * @n: it is a n
  * Return: returns result.
  */
 
@@ -23,6 +21,11 @@ int my_sqrt_rec(int a, int b)
 	return (my_sqrt_rec(a, b + 1));
 }
 
+/**
+ * _sqrt_recursion - updates the value of the variable
+ * @n: it is a n
+ * Return: returns result.
+ */
 
 int _sqrt_recursion(int n)
 {
