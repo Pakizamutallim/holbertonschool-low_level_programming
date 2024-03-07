@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *cap_string - updates the value of the variable
+ * main - updates the value of the variable
  * @argv: the pointer points to to 98
  * @argc: pointer to the variable to update
  * Return: returns result.
