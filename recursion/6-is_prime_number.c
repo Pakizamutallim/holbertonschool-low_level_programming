@@ -32,11 +32,11 @@ int my_is_prime(int n)
 	}
 	else
 	{
-		return (my_is_prime(n - 1));
+		return (my_is_prime(n + 1));
 	}
 }
 
 int is_prime_number(int n)
 {
-	return (my_is_prime(n, 1));
+	return (my_is_prime(n, 2));
 }
