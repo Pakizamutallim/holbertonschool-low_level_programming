@@ -14,22 +14,7 @@ int my_is_prime(int n)
 	{
 		return (0);
 	}
-	if (n % 2 == 0)
-	{
-		return (0);
-	}
-	if (n % 3 == 0)
-	{
-		return (0);
-	}
-	if (n % 4 == 0)
-	{
-		return (0);
-	}
-	if (n % 5 == 0)
-	{
-		return (0);
-	}
+
 	return (my_is_prime(n, n - 1));
 }
 
