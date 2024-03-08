@@ -12,10 +12,7 @@ int main(int argc, char *argv[])
 {
 	(void) argc;
 
-	int num = atoi(*argv[2]);
-	int num2 = atoi(*argv[3]);
-
-	int result = num * num2;
+	int result = (strtol(argv[2], NULL, 10)) * (strtol(argv[3], NULL, 10));
 
 	printf("%d", result);
 }
