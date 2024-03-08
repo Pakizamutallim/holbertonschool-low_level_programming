@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		num = atoi(*argv[i]);
+		num = atoi(argv[i]);
 
 		if (strlen(argv[i]) != strspn(argv[i], "0123456789"))
 		{
