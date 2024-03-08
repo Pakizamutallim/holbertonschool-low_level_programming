@@ -2,17 +2,29 @@
 #include <stdlib.h>
 
 /**
- * main - updates the value of the variable
- * @argc:the pointer points to to 98
- * @argv: pointer to the variable to update
+ * main - it is a program for program
+ * @argc: This is the number of arguments
+ * @argv: This is the array of arguments
  * Return: returns result.
  */
 
 int main(int argc, char *argv[])
 {
-	(void) argc;
+	int i, result = 1;
 
-	int result = (strtol(argv[2], NULL, 10)) * (strtol(argv[3], NULL, 10));
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			result = result * (strtol(argv[i], NULL, 10));
+		}
+	}
+	printf("%i\n", result);
 
-	printf("%d", result);
+	return (0);
 }
