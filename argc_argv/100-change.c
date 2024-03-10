@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0, num = 0, cent = 0;
+	int i = 0, num, cent = 0;
 	char currency[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -25,20 +25,19 @@ int main(int argc, char *argv[])
 	else
 	{
 		num = atoi(argv[1]);
-		while (currency[i] < 5)
+		while (i < 5)
 		{
+			cent += num / currency[i];
+			num %= currency[i];
+			i++;
 			while (num >= i)
 			{
 				num = num - i;
 				cent++;
-				if (i == 1)
-				{
-					cent++;
-				}
+				i++;
 			}
 		}
+		printf("%d\n", cent);
 	}
-	printf("%d\n", cent);
-
 	return (0);
 }
