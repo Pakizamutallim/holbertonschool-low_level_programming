@@ -30,12 +30,6 @@ int main(int argc, char *argv[])
 			cent += num / currency[i];
 			num %= currency[i];
 			i++;
-			while (num >= i)
-			{
-				num = num - i;
-				cent++;
-				i++;
-			}
 		}
 		printf("%d\n", cent);
 	}
