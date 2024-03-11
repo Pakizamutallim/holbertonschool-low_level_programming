@@ -20,17 +20,20 @@ char *_strdup(char *str)
 	{
 		for (i = 0; str[i] != 0; i++)
 		{
-			array = malloc(sizeof(char));
-			if (array == NULL)
+			;
+		}
+		
+		array = malloc(i + 1 * sizeof(char));
+		
+		if (array == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (j = 0; array[j] != 0; j++)
 			{
-				return (NULL);
-			}
-			else
-			{
-				for (j = 0; array[j] != 0; j++)
-				{
-					array[j] = str[i];
-				}
+				array[j] = str[i];
 			}
 		}
 	}
