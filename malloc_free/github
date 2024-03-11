@@ -1,0 +1,3 @@
+git add .
+git commit -m 'committed to malloc_free'
+git push
