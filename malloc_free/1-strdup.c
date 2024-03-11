@@ -15,8 +15,6 @@ char *_strdup(char *str)
 	int i, j;
 
 	if (str == NULL)
-		return (NULL);
-	else
 	{
 		for (i = 0; str[i] != 0; i++)
 		{
@@ -36,6 +34,10 @@ char *_strdup(char *str)
 				array[j] = str[i];
 			}
 		}
+	}
+	else
+	{
+		return (NULL);
 	}
 	array[j] = 0;
 	return (array);
