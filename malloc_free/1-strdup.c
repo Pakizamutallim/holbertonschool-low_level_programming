@@ -37,5 +37,6 @@ char *_strdup(char *str)
 			}
 		}
 	}
+	array[j] = 0;
 	return (array);
 }
