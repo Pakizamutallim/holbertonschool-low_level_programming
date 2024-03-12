@@ -4,8 +4,8 @@
 #include <string.h>
 
 /**
- * main - check the code
- *
+ * *_strdup - check the code
+ * @str: is array to copy
  * Return: Always 0.
  */
 
@@ -20,9 +20,9 @@ char *_strdup(char *str)
 		{
 			;
 		}
-		
+
 		array = malloc((i + 1) * sizeof(char));
-		
+
 		if (array != NULL)
 		{
 			for (j = 0; str[j] != 0; j++)
