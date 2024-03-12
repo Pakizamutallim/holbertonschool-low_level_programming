@@ -4,9 +4,9 @@
 #include <string.h>
 
 /**
- * *create_array - prints buffer in hexa
- * @c: the address of memory to print
- * @size: the size of the memory to print
+ * *str_concat- prints buffer in hexa
+ * @s1: the address of memory to print
+ * @s2: the size of the memory to print
  *
  * Return: 0.
  */
