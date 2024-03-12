@@ -3,10 +3,9 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
+ * free_grid - frees a grid of integers
  * @grid: the address of the two dimensional grid
- * @grid: the address of the two dimensional grid
- * @grid: the address of the two dimensional grid
+ * @height: the address of the two dimensional grid
  *
  * Return: Nothing.
  */
@@ -19,5 +18,5 @@ void free_grid(int **grid, int height)
 	{
 		free(grid[i]);
 	}
-	free(grid
+	free(grid);
 }
