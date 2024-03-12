@@ -34,10 +34,25 @@ char *str_concat(char *s1, char *s2)
 	}
 	array = malloc(i * sizeof(char) + j * sizeof(char) + 1);
 
-	array = concat(s1, s2);
-
 	if (array == NULL)
 		return (NULL);
+	char *tmp1 = s1;
+
+	char *tmp2 = s2;
+
+	while (*tmp1)
+	{
+		*array = *tmp1;
+		array++;
+		tmp1++;
+	}
+
+	while (*tmp2)
+	{
+		*array = *tmp2;
+		array++;
+		tmp2++;
+	}
 
 	return (array);
 }
