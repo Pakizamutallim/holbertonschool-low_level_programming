@@ -31,9 +31,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		j++;
 	}
-	array = malloc(i * sizeof(char) + j * sizeof(char));
+	array = malloc(i * sizeof(char) + j * sizeof(char) + 1);
 
-	printf("%s " "%s\0\n", s1[i] s2[j]);
+	strcpy(array, s1);
+	strcpy(array, s2);
 	
 	if (array == NULL)
 		return (NULL);
