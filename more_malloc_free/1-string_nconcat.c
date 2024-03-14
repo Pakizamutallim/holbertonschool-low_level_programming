@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * *create_array - prints buffer in hexa
- * @c: the address of memory to print
- * @size: the size of the memory to print
- *
+ * *string_nconcat - prints buffer in hexa
+ * @s1: the address of memory to print
+ * @s2: the size of the memory to print
+ * @n: number of bytes to concatenates
  * Return: 0.
  */
 
@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	if (len1 <= n)
+	if (len2 <= n)
 	{
 		for (i = 0; s1[i] != 0; i++)
 			sconcat[i] = s1[i];
