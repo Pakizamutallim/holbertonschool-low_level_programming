@@ -12,6 +12,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	int i;
 	char *array;
 
 	if (size == 0 || nmemb == 0)
@@ -19,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	array = calloc(nmemb, size);
+	array = malloc(nmemb * size);
 
 	if (array == NULL)
 	{
