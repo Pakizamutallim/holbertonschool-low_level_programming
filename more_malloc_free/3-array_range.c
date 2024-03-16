@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * *create_array - prints buffer in hexa
- * @c: the address of memory to print
- * @size: the size of the memory to print
+ * *array_range - prints buffer in hexa
+ * @min: the address of memory to print
+ * @max: the size of the memory to print
  *
  * Return: 0.
  */
@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	array = malloc(sizeof(int) * (max - min) + 1);
+	array = malloc(sizeof(int) * (max - min + 1));
 
 	if (array == NULL)
 		return (NULL);
