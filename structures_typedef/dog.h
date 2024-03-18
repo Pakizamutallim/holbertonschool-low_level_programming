@@ -1,18 +1,11 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include <stdio.h>
 
-struct dog{
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
 };
-
-int main()
-{
-	struct dog dogname;
-
-	dogname.name = "poppy";
-	dogname.age = "3";
-	dogname.owner = "Bob";
-
-	return (0);
-}
