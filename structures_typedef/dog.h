@@ -2,12 +2,17 @@
 
 struct dog{
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
 
 int main()
 {
-	struct dog dogname = {"Poppy","3.5"};
-	printf ("%s" "%.1f", dogname.name, dogname.age);
+	struct dog dogname;
+
+	dogname.name = "poppy";
+	dogname.age = "3";
+	dogname.owner = "Bob";
+
+	return (0);
 }
