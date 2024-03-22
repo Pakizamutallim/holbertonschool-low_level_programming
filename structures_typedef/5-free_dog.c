@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * init_dog - function that initialize a variable of type struct dog
@@ -12,6 +13,8 @@ void free_dog(dog_t *d)
 {
 	if (d)
 	{
-		free(d);
+		free(d->name);
+		free(d->age);
+		free(d->owner);
 	}
 }
