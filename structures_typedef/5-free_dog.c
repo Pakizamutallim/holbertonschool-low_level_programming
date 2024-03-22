@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * init_dog - function that initialize a variable of type struct dog
+ * free_dog - function that initialize a variable of type struct dog
  * @d: pointer
  *
  * Return: Always 0.
