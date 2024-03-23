@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdio.h>
+
 /**
  * main - follows instructions of input operation
  * @argc: count of inputs
