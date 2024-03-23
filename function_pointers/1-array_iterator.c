@@ -6,7 +6,7 @@
  * @action: pointer
  * @array: pointer
  * @size: size of array
- */.
+ */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
