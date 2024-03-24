@@ -15,11 +15,9 @@ void _printchar(va_list list)
 
 
 /**
- *
  * _printstr - function to print string
  * @list: list being passed
  * Return: void
- *
  */
 void _printstr(va_list list)
 {
@@ -55,10 +53,10 @@ void _printint(va_list list)
 }
 
 /**
- *  * print_all - function to print various arguments
- *   * @format: constant char argument
- *    * Return: Void
- *     */
+ * print_all - function to print various arguments
+ * @format: constant char argument
+ * Return: Void
+ */
 void print_all(const char * const format, ...)
 {
 	unsigned int a = 0, b = 0;
