@@ -19,7 +19,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	while (i < 5)
+	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s))
 		{
@@ -27,6 +27,6 @@ int (*get_op_func(char *s))(int, int)
 		}
 		return (ops[i].f);
 	}
-	printf("Error");
+	printf("Error\n");
 	exit(99);
 }
