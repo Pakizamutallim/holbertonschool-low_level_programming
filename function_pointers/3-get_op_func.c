@@ -2,6 +2,8 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "function_pointers.h"
+
 /**
  * get_op_func - selects the correct function to perform operation
  * @s: input symbol
@@ -20,6 +22,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
+	i = 0;
 	while (i < 5)
 	{
 		if (*(ops[i].op) == *s && s[0] != '\0')
@@ -28,6 +31,5 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
-	i = 0;
 	return (0);
 }
