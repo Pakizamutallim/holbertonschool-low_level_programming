@@ -6,7 +6,7 @@
 /**
  * print_list - list the code
  *
- * @*h: it is pointer
+ * @h: it is pointer
  *
  * Return: Always 0.
  */
@@ -15,12 +15,12 @@ size_t print_list(const list_t *h)
 {
 	size_t i = 0;
 
-	while(h != 0)
+	while (h != 0)
 	{
-		if(h->str == NULL)
-			printf("[%d] " "%s\n", 0, "(nil)");
+		if (h->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
 		else
-			printf("[%d] " "%s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
 		i++;
 	}
