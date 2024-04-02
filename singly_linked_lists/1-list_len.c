@@ -4,14 +4,14 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * list_len - check the code
+ * @h: a pointer
  * Return: Always 0.
  */
 
 size_t list_len(const list_t *h)
 {
-       size_t i = 0;
+	size_t i = 0;
 
 	while (h)
 	{
