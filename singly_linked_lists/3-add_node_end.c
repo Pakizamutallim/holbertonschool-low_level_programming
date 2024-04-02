@@ -10,9 +10,11 @@
  * Return: new node.
  */
 
-list_t *my_node(const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t new;
+	unsigned int i = 0;
+
+	list_t new, end;
 
 	new = malloc(sizeof(list_t));
 
@@ -25,25 +27,26 @@ list_t *my_node(const char *str)
 		free(new);
 		return (NULL);
 	}
-	new->next = NULL;
-	return (new);
-}
-
-list_t *add_node_end(list_t **head, const char *str)
-{
-	list_t *new = my_node(str);
-	
-	if (new == NULL)
-		return (NULL);
-
-	if(*head == NULL)
+	while (*str != 0)
 	{
-		*head = new;
-		return (new);
+		i++;
 	}
-
-	while (head->next != NULL)
-		head = head->next;
-	head->next = new;
-	return (new);
+	end = malloc(sizeof(list_t));
+	
+	if (end == NULL)
+		return (NULL);
+	end->str = new->str;
+	end->len = i;
+	end->next = NULL;
+	if (*head == NULL)
+		*head = end;
+	else
+	{
+		list = *head;
+		while (list->next)
+			list = list->next;
+		list->next = end;
+	}
+	return (end);
 }
+
