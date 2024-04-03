@@ -20,7 +20,7 @@ int _strlen(const char *str)
 	{
 		i++;
 	}
-	return (NULL);
+	return (i);
 }
 
 
