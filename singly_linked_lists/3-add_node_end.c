@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include "lists.h"
 
-
 /**
 * _strlen - Adds node to end of linked list
 *
@@ -14,42 +13,52 @@
 
 int _strlen(const char *str)
 {
-	unsigned int i = 0;
+	unsigned int length = 0;
 
-	while (str[i] != 0)
+	while (str[length] != '\0')
 	{
-		i++;
+		length++;
 	}
-	return (i);
+	return (length);
 }
 
-
 /**
- * *add_node_end - check the code
- * @head: pointer
- * @str: pointer to duplicate
- * Return: new node.
- */
+* add_node_end - Adds node to end of linked list
+*
+* @head: Double Pointer
+*
+* @str: Pointer to struct pointer
+*
+* Return: address of the new element, or NULL
+*/
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *end;
+	list_t *list, *end_node;
 
-	end = malloc(sizeof(list_t));
-	
-	if (end == NULL)
+	end_node = malloc(sizeof(list_t));
+
+	if (end_node == NULL)
+	{
 		return (NULL);
-	end->str = new->str;
-	end->len = strlen(str);
-	end->next = NULL;
+	}
+	end_node->str = strdup(str);
+	end_node->len = _strlen(str);
+	end_node->next = NULL;
+
 	if (*head == NULL)
-		*head = end;
+	{
+		*head = end_node;
+	}
 	else
 	{
-		new = *head;
-		while (new->next)
-			new = new->next;
-		new->next = end;
+		list = *head;
+
+		while (list->next)
+		{
+			list = list->next;
+		}
+		list->next = end_node;
 	}
-	return (end);
+	return (end_node);
 }
