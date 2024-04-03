@@ -15,7 +15,6 @@
 int _strlen(const char *str)
 {
 	unsigned int i = 0;
-	list_t *new, *end;
 
 	while (str[i] != 0)
 	{
@@ -41,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (end == NULL)
 		return (NULL);
 	end->str = new->str;
-	end->len = i;
+	end->len = strlen(str);
 	end->next = NULL;
 	if (*head == NULL)
 		*head = end;
