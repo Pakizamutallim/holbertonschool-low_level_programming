@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * free_list - check the code
+ * @head: a pointer
  * Return: Always 0.
  */
 
