@@ -2,7 +2,9 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * binary_to_uint - check the code
+ *
+ * @b: pointer
  *
  * Return: Always 0.
  */
