@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * get_bit - check the code
+ * set_bit - check the code
  * @n: it is number
  * @index: it is a indef of n
  * Return: Always 0.
