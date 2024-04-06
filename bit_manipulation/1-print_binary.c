@@ -9,21 +9,9 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int i;
-	int binary = sizeof(n) * 8 - 1;
-
-	if (n == 0)
-		printf("%d", '0');
-	for (i = 0; binary >= 0; i++)
+	if (n > 1)
 	{
-		if (n >> binary & 1)
-		{
-			printf("%d", '1');
-		}
-		else if (i)
-		{
-			printf("%d", '0');
-		}
-		binary--;
+		print_binary(n >> 1);
 	}
+	putchar((n & 1) + '0');
 }
