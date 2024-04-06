@@ -11,12 +11,12 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int i = 0;
+	unsigned long int i = 0 nm = n ^ m;
 
-	while ((n ^ m) > 0)
+	while (nm > 0)
 	{
-		i = i + ((n ^ m) & 1);
-		(n ^ m) >>= 1
+		i = i + (nm & 1);
+		nm >>= 1;
 
 	return (i);
 }
