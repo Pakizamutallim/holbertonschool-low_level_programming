@@ -9,9 +9,9 @@
  * Return: If an error occurs - -1.
  *         Otherwise - 1.
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int i = 0 nm = n ^ m;
+	unsigned long int i = 0, nm = n ^ m;
 
 	while (nm > 0)
 	{
