@@ -15,13 +15,15 @@ int copy_to(char *file_to, char *file_from)
 	int of, ot, r, w, c, ct;
 
 	of = open(file_from, O_RDONLY);
+	if (of < 0)
+		return (98);
 
-	ot = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	ot = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (ot < 0)
 		return (99);
 	buffer = malloc(sizeof(char) * 1024);
 	r = read(of, buffer, 1024);
-	if (r < 0 || of < 0)
+	if (r < 0)
 		return (98);
 
 	while (r > 0)
