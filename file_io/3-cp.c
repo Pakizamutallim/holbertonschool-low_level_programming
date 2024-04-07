@@ -20,7 +20,7 @@ int copy_to(char *file_to, char *file_from)
 
 	ot = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (ot < 0)
-		return (-1);
+		return (99);
 	buffer = malloc(sizeof(char) * 1024);
 	r = read(of, buffer, 1024);
 	if (r < 0)
@@ -65,7 +65,6 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	x = copy_to(argv[2], argv[1]);
-	return (0);
 
 	switch (x)
 	{
