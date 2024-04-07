@@ -59,8 +59,23 @@ int copy_to(char *file_to, char *file_from)
 
 int main(int argc, char *argv[])
 {
+	int x;
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
-	copy_to(argv[2], argv[1]);
+	x = copy_to(argv[2], argv[1]);
 	return (0);
+
+	switch (c)
+	{
+		case (98):
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		case (99):
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		case (100):
+			exit(100);
+		default:
+			return (0);
+	}
 }
