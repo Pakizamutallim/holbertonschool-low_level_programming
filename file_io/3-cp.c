@@ -9,7 +9,7 @@
  * Return: o
  */
 
-int copy_to(char file_to, char file_from)
+int copy_to(const char file_to, const char file_from)
 {
 	char* buffer;
 	int of, ot, r, w;
