@@ -12,7 +12,7 @@
 int copy_to(char *file_to, char *file_from)
 {
 	char* buffer;
-	int of, ot, r, w;
+	int of, ot, r, w, c, ct;
 
 	of = open(file_from, O_RDONLY);
 
@@ -36,13 +36,13 @@ int copy_to(char *file_to, char *file_from)
 	c = close(of);
 	if (c < 0)
 	{
-		dprint(STDERR_FILENO, "Error: Can't close fd %d\n", fc);
+		dprint(STDERR_FILENO, "Error: Can't close fd %d\n", c);
 		return (100);
 	}
 	ct = close(ot);
 	if (ct < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ftc);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ct);
 		return (100);
 	}
 
