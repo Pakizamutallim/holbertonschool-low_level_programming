@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 	x = copy_to(argv[2], argv[1]);
 	return (0);
 
-	switch (c)
+	switch (x)
 	{
 		case (98):
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
