@@ -48,3 +48,19 @@ int copy_to(char *file_to, char *file_from)
 
 	return (0);
 }
+
+
+/**
+ * mail - main function
+ * @argc: is a count of argument
+ * @argv: is a vector of arg
+ * Return: 0
+ */
+
+int main(int argc, char argv[])
+{
+	if (argc != 3)
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
+	copy_to(argv[2], argv[1]);
+	return (0);
+}
