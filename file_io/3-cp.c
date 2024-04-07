@@ -57,7 +57,7 @@ int copy_to(char *file_to, char *file_from)
  * Return: 0
  */
 
-int main(int argc, char argv[])
+int main(int argc, *char argv[])
 {
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
