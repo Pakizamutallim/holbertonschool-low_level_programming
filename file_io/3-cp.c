@@ -78,6 +78,6 @@ int main(int argc, char *argv[])
 		case (100):
 			exit(100);
 		default:
-			return (0);
+			return (99);
 	}
 }
