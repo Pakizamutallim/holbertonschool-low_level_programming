@@ -53,7 +53,7 @@ int copy_to(char *file_to, char *file_from)
 
 
 /**
- * mail - main function
+ * main - main function
  * @argc: is a count of argument
  * @argv: is a vector of arg
  * Return: 0
@@ -62,6 +62,7 @@ int copy_to(char *file_to, char *file_from)
 int main(int argc, char *argv[])
 {
 	int x;
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
