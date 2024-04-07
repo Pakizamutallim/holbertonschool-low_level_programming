@@ -11,7 +11,7 @@
 
 int copy_to(char *file_to, char *file_from)
 {
-	char* buffer;
+	char *buffer;
 	int of, ot, r, w, c, ct;
 
 	of = open(file_from, O_RDONLY);
@@ -63,7 +63,10 @@ int main(int argc, char *argv[])
 {
 	int x;
 	if (argc != 3)
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
 	x = copy_to(argv[2], argv[1]);
 
 	switch (x)
