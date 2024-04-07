@@ -20,7 +20,7 @@ int copy_to(char *file_to, char *file_from)
 
 	ot = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (ot < 0)
-		return (99);
+		return (-1);
 	buffer = malloc(sizeof(char) * 1024);
 	r = read(of, buffer, 1024);
 	if (r < 0)
@@ -48,7 +48,7 @@ int copy_to(char *file_to, char *file_from)
 		return (100);
 	}
 
-	return (99);
+	return (0);
 }
 
 
