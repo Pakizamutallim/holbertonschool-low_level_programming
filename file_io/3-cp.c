@@ -48,7 +48,7 @@ int copy_to(char *file_to, char *file_from)
 		return (100);
 	}
 
-	return (0);
+	return (99);
 }
 
 
@@ -78,6 +78,6 @@ int main(int argc, char *argv[])
 		case (100):
 			exit(100);
 		default:
-			return (99);
+			return (0);
 	}
 }
